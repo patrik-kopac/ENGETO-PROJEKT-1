@@ -1,0 +1,1 @@
+Povinný projekt (prvý z troch a jediný na HTML/CSS) v ENGETO frontend akadémií. Používam fotky, ikonky, fonty atď podľa zadania. Ide o jednoduchú responzívnu stránku nejakého Travel Assistanta.
