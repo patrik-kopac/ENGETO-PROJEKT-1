@@ -1,1 +1,20 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  background-color: red;
+  font-size: 1rem;
+}
+
+p {
+  color: blue;
+  border: 1px solid gray;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  color: red;
+}
+
+.header {
+  height: 200px;
+}
+
+.footer {
+  height: 300px;
+}/*# sourceMappingURL=style.css.map */
