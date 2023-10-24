@@ -1,8 +1,35 @@
 /**************BASICS**************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
 
 
 /**************SHARED**************/
+.capitalize {
+    text-transform: capitalize;
+}
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+* {
+    --color-brown-dark: #33292a;
+    --color-white: #fff;
+    --color-brown: #644b4f;
+    --color-grey-dark: #333333;
+    --color-white-darker: #f2f2f2;
+    --color-pink: #efa69d;
+    --color-pink-darker: #e9877b;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    border-radius: 5px;
+}
 
 /**************HEADER**************/
 
