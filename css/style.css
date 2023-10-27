@@ -42,9 +42,6 @@
 /**************HEADER**************/
 
 
-
-
-
 /**************nav**************/
 .nav {
     background-color: var(--color-brown-dark);
@@ -52,7 +49,6 @@
     width: 100vw;
     height: 67px;
     display: flex;
-    align-items: center;
 
     position: fixed;
     top: 0;
@@ -63,8 +59,54 @@
 .nav-container {
     width: 70vw;
     margin: 0 auto;
+    align-items: center;
     display: flex;
     justify-content: space-between;
+}
+
+        @media (max-width: 768px) {
+            .nav-container {
+                display: none;
+            }
+        }
+
+
+.nav-burger-container {
+    position: relative;
+    width: 80vw;
+    margin: 0 auto;
+
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-burger-container {
+        display: block;
+    }
+
+    .nav-burger-container a:hover {
+        transform: scale(1.1);
+        translate: 1.25;
+    }
+
+    .burger-menu {
+        width: 50px;
+        height: 50px;
+
+        position: absolute;
+        top: 10%;
+        right: 0%;
+    }
+
+    .burger-menu-img {
+        background-image: url(/files/icons/pngegg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .nav-container a {
@@ -129,6 +171,12 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+        @media (max-width: 500px) {
+            .hero-text {   
+                font-size: 50px;
+            }
+        }
 
 .hero-text span {
     flex-basis: calc(100% / 1);
@@ -354,10 +402,15 @@
     background-repeat: no-repeat;
 }
 
-.
+
+
 
 
 /**************contacts**************/
+
+
+
+
 
 
 /**************reviews**************/
@@ -366,4 +419,4 @@
 /**************gallery**************/
 
 
-/**************FOOTER**************/
+/**************FOOTER*************/
