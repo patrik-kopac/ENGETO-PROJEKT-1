@@ -117,7 +117,7 @@
 
     position: absolute;
     bottom: 20%;
-    left: 30%;
+    left: 25%;
 }
 
 .hero-text {   
@@ -282,7 +282,79 @@
     text-align: center;
 }
 
+
+
+
+
 /**************our-trips**************/
+.our-trips {
+    width: 70vw;
+    margin: 10vh auto;
+    height: 55vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 10px;
+}
+
+.our-trips-container {
+    flex-basis: calc(100% / 3 - 10px);
+
+    height: 145px;
+}
+
+.our-trips-h2 {
+    background-color: var(--color-white-darker);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-trips-img1 {
+    background-image: url(/files/images/simon-english-48nerZQCHgo-unsplash.jpg);
+}
+
+.our-trips-img2 {
+    background-image: url(/files/images/james-wheeler-ZOA-cqKuJAA-unsplash.jpg);
+}
+
+.our-trips-img3 {
+    background-image: url(/files/images/charles-black-F7HGqkkMYAU-unsplash.jpg);
+}
+
+.our-trips-img4 {
+    background-image: url(/files/images/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg);
+}
+
+.our-trips-img5 {
+    background-image: url(/files/images/patrick-szylar-45bM3XGqnDE-unsplash.jpg);
+}
+
+.our-trips-img6 {
+    background-image: url(/files/images/chung-yee-tsang-wqxCKM0R6R8-unsplash.jpg);
+}
+
+.our-trips-img7 {
+    background-image: url(/files/images/julian-bialowas-ilkTnuMunP8-unsplash.jpg);
+}
+
+.our-trips-img8 {
+    background-image: url(/files/images/matej-drha-rbDzMcJsBkY-unsplash.jpg);
+}
+
+.our-trips-photos {
+    width: 100%;
+    height: 100%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.
 
 
 /**************contacts**************/
