@@ -17,11 +17,12 @@
 }
 
 * {
-    --color-brown-dark: #33292a;
     --color-white: #fff;
-    --color-brown: #644b4f;
-    --color-grey-dark: #333333;
     --color-white-darker: #f2f2f2;
+    --color-brown: #644b4f;
+    --color-brown-dark: #33292a;
+    --color-brown-lighter: #564546;
+    --color-grey-dark: #333333;
     --color-pink: #efa69d;
     --color-pink-darker: #e9877b;
 }
@@ -35,7 +36,48 @@ body {
 
 
 /**************nav**************/
+.nav {
+    background-color: var(--color-brown-dark);
 
+    width: 100vw;
+    height: 67px;
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-container {
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+
+    display: inline-block;
+    flex-grow: 1;
+
+    border-radius: 15px;
+}
+
+.nav-container a:hover {
+    background-color: var(--color-brown-lighter);
+    transform: scale(1.1);
+    translate: 1.5;
+}
+
+.nav-container li {
+    list-style: none;
+}
 
 /**************hero**************/
 
