@@ -216,6 +216,12 @@
     flex-basis: calc(100% / 2 - 2%);
 }
 
+            @media (max-width: 768px) {
+            .about-us-text h2 {
+                font-size: 40px;
+            }  
+            } 
+
 .about-us-text p {
     font-size: 17px;
     margin-top: 5%;
@@ -248,7 +254,7 @@
 
         @media (max-width: 768px) {
             .about-us-text p {
-                font-size: 16px;
+                font-size: 18px;
                 margin: 5% 0;
             }
         }
@@ -313,16 +319,23 @@
     text-align: center;
 }
 
+            @media (max-width: 768px) {
+                .what-we-do-text h2 {
+                    font-size: 40px;
+                }
+            } 
+
 .what-we-do-text p {
     font-size: 14px;
     margin-top: 3%;
 }
 
-@media (max-width: 768px) {
-    .what-we-do-text p {
-        margin: 3% 0;
-    }
-}
+            @media (max-width: 768px) {
+                .what-we-do-text p {
+                    margin: 3% 0;
+                    font-size: 18px;
+                }
+            }
 
 .what-we-do-icons {
     flex-basis: calc(100% / 3);
@@ -341,6 +354,12 @@
 .what-we-do-icons h3 {
     text-align: center;
 }
+
+        @media (max-width: 768px) {
+        .what-we-do-icons h3 {
+            font-size: 30px;
+        }  
+        } 
 
 .what-we-do-icon-container {
     flex-basis: calc(100% / 7);
@@ -416,11 +435,25 @@
     gap: 10px;
 }
 
+            @media (max-width: 768px) {
+                .our-trips {
+                    width: 80vw;
+                    height: auto;
+                }
+            }
+
 .our-trips-container {
     flex-basis: calc(100% / 3 - 10px);
 
-    height: 145px;
+    height: 18vh;
 }
+
+            @media (max-width: 768px) {
+                .our-trips-container {
+                    flex-basis: calc(100% / 1);
+                    height: 30vh;
+                }
+            }
 
 .our-trips-h2 {
     background-color: var(--color-white-darker);
@@ -429,6 +462,13 @@
     align-items: center;
     justify-content: center;
 }
+
+        @media (max-width: 768px) {
+            .our-trips-h2 {
+                height: 10vh;
+                font-size: 25px;
+            }
+        }
 
 .our-trips-img1 {
     background-image: url(/files/images/simon-english-48nerZQCHgo-unsplash.jpg);
