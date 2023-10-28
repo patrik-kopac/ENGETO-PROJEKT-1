@@ -275,13 +275,19 @@
 /**************what-we-do**************/
 .what-we-do {
     width: 100vw;
-    height: 591px;
+    height: 70vh;
 
     background-color: var(--color-brown-dark);
 }
 
+        @media (max-width: 768px) {
+            .what-we-do {
+                height: fit-content;
+            }
+        }
+
 .what-we-do-container {
-    width: 70%;
+    width: 70vw;
     height: 50vh;
     margin: 10vh auto;
 
@@ -291,6 +297,13 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+        @media (max-width: 768px) {
+            .what-we-do-container {
+                width: 80vw;
+                height: fit-content;
+            }
+        }
 
 .what-we-do-text {
     flex-basis: calc(100% / 3);
@@ -305,12 +318,25 @@
     margin-top: 3%;
 }
 
+@media (max-width: 768px) {
+    .what-we-do-text p {
+        margin: 3% 0;
+    }
+}
+
 .what-we-do-icons {
     flex-basis: calc(100% / 3);
 
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
+
+        @media (max-width: 768px) {
+            .what-we-do-icons {
+                flex-direction: column;
+            }   
+        }
 
 .what-we-do-icons h3 {
     text-align: center;
@@ -326,9 +352,24 @@
 
         @media (max-width: 870px) {
             .what-we-do-icon-container {
-                flex-basis: calc(100% / 6)
+                flex-basis: calc(100% / 6);
             }
         }
+
+        @media (max-width: 768px) {
+            .what-we-do-icon-container {
+                width: 150px;
+                height: 190px;
+                margin: 10px auto;
+
+                flex-basis: auto;
+            }
+        }
+
+.what-we-do-icon-container:hover {
+    transform: scale(1.1);
+    translate: 1.25;
+}
 
 .what-we-do-icon1 {
     background-image: url(/files/icons/hiking-white.png);
