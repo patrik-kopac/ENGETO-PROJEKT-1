@@ -28,6 +28,7 @@
     --color-grey-dark: #333333;
     --color-pink: #efa69d;
     --color-pink-darker: #e9877b;
+    --color-black: black;
 }
 
 .body {
@@ -426,7 +427,7 @@
 .our-trips {
     width: 70vw;
     margin: 10vh auto;
-    height: 55vh;
+    height: auto;
 
     display: flex;
     flex-wrap: wrap;
@@ -447,6 +448,12 @@
 
     height: 18vh;
 }
+
+            @media (min-width: 1500px) {
+                .our-trips-container {
+                    height: 20vh;
+                }
+            }
 
             @media (max-width: 768px) {
                 .our-trips-container {
@@ -516,7 +523,129 @@
 
 
 /**************contacts**************/
+.contacts {
+    width: 100vw;
+    height: 30vh;
+    background-color: var(--color-brown);
+}
 
+            @media (max-width: 1000px) {
+                .contacts {
+                    height: auto;
+                }
+            }
+
+            @media (max-width: 605px) {
+                .contacts {
+                    height: auto;
+                }
+            }
+
+.contacts-container {
+    width: 70vw;
+    height: 25vh;
+    margin: 2.5vh auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+            @media (max-width: 1000px) {
+                .contacts-container {
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin: 7vh auto;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .contacts-container {
+                    width: 80vw;
+                    height: auto;
+                    margin: 7vh auto;
+                }
+            }
+
+.contacts-heading {
+    flex-grow: 1;
+    height: 17vh;
+    margin-right: 5vw;
+
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+            @media (max-width: 1000px) {
+                .contacts-heading {
+                    width: auto;
+                    height: auto;
+                    font-size: 22px;
+                    margin-right: 0;
+                    margin-bottom: 3vh;
+                }
+            }
+
+.contacts-heading h2 {
+    width: 200px;
+}
+
+            @media (max-width: 1000px) {
+                .contacts-heading h2 {
+                    width: auto;
+                }
+            }
+
+.contacts-content {
+    flex-grow: 2;
+
+    height: 17vh;
+    margin: 5px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+            @media (max-width: 1000px) {
+                .contacts-content {
+                    margin: 40px 0;
+                }
+            }
+
+.contacts-paragraphs {
+    color: var(--color-white);
+    font-size: 16px;
+}
+
+.contacts-paragraphs p:nth-child(2) {
+    margin-top: 1rem;
+}
+
+.contacts-button {
+    padding: 13px 5px 5px 5px;
+    width: 130px;
+    height: 45px;
+    text-align: center;
+
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-black);
+    
+    background-color: var(--color-white);    
+}
+
+            @media (max-width: 1000px) {
+                .contacts-button {
+                    margin-top: 5vh;
+                }
+            }
+
+.contacts-button:hover {
+    transform: scale(1.1);
+    translate: 1.25;
+}
 
 
 
