@@ -643,6 +643,7 @@
             }
 
 .contacts-button:hover {
+    background-color: var(--color-white-darker);
     transform: scale(1.1);
     translate: 1.25;
 }
@@ -652,6 +653,67 @@
 
 
 /**************reviews**************/
+.reviews {
+    width: 70vw;
+    margin: 7vh auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4vh;
+
+    text-align: center;
+}
+
+.review-intro-container {
+    
+}
+
+.review-intro {
+    width: 300px;
+}
+
+.review-intro h2 {
+    margin-bottom: 2vh;
+}
+
+.reviews-itself {
+    display: flex;
+    justify-content: space-between;
+    gap: 6vw;
+}
+
+.review1,
+.review2 {
+    font-size: 14px;
+}
+
+.review1 h3,
+.review2 h3 {
+    margin-top: 2vh;
+}
+
+.review-img-container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 50%;
+}
+
+.review1-img {
+    background-image: url(/files/images/kalen-emsley-kGSapVfg8Kw-unsplash.jpg);
+}
+
+.review2-img {
+    background-image: url(/files/images/jeffrey-keenan-pUhxoSapPFA-unsplash.jpg);
+}
+
+
+
+
+
 
 
 /**************gallery**************/
