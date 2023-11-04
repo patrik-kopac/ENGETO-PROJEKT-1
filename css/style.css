@@ -849,6 +849,69 @@
 
 
 /**************gallery**************/
+.gallery {
+    width: 100vw;
+    height: 840px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-photo1 {
+    background-image: url(/files/images/alexey-fedenkov-BaCZYH9RLmQ-unsplash.jpg);
+}
+
+.gallery-photo2 {
+    background-image: url(/files/images/omer-salom-LoijtQXXNhs-unsplash.jpg);    
+}
+
+.gallery-photo3 {
+    background-image: url(/files/images/james-wheeler-ZOA-cqKuJAA-unsplash.jpg);
+}
+
+.gallery-photo4 {
+    background-image: url(/files/images/daniel-tseng-73lmMKhi2U8-unsplash.jpg);
+}
+
+.gallery-photos {
+    width: 100%;
+    height: 100%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gallery-photo-container {
+    flex-basis: calc(100% / 2);
+
+    width: auto;
+    height: 420px;
+}
+
+            @media (max-width: 768px) {
+                .gallery-photo-container {
+                    flex-basis: calc(100% / 1);
+                }
+            }
+
+            @media (max-width: 450px) {
+                .gallery-photo-container {
+                    height: auto;
+                }
+            }
+
+.gallery-photo-container:hover {
+    transform: scale(1.1);
+    transition: 1.1s;
+}
+
+@media (max-width: 768px) {
+    .gallery-photo-container:hover {
+        transform: scale(1);
+        transition: 0s;
+    }
+}
 
 
 /**************FOOTER*************/
